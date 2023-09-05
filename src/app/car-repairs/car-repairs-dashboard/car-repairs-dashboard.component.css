@@ -1,0 +1,8 @@
+mat-card {
+  color: #fff;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: row;
+}

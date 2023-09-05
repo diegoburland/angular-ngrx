@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="board">
+    <app-list-column name="New"
+                     [canAdvance]="true"
+                     (advanceRepair)="advanceCarRepair($event)"></app-list-column>
+    <app-list-column name="In Progress"
+                     [canAdvance]="true"
+                     (advanceRepair)="advanceCarRepair($event)"></app-list-column>
+    <app-list-column name="Done"></app-list-column>
+  </div>
+
+  <mat-spinner></mat-spinner>
+</div>
