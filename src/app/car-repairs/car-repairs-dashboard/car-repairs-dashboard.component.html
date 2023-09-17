@@ -3,15 +3,15 @@
     <mat-card-title>Car Repairs Statistics</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <ng-container>
+    <ng-container *ngIf="!($isFetching | async )">
       <app-dashboard-statistic
-        [label]="'To do'"></app-dashboard-statistic>
+        [label]="'To do'" [value]="$totalOfNewCarRepairs | async"></app-dashboard-statistic>
       <app-dashboard-statistic
-        [label]="'In Progress'"></app-dashboard-statistic>
+        [label]="'In Progress'" [value]="$totalOfInProgressCarRepairs | async"></app-dashboard-statistic>
       <app-dashboard-statistic
-        [label]="'Done'"></app-dashboard-statistic>
+        [label]="'Done'" [value]="$totalOfDoneCarRepairs | async"></app-dashboard-statistic>
     </ng-container>
-    <mat-spinner></mat-spinner>
+    <mat-spinner *ngIf="$isFetching | async"></mat-spinner>
   </mat-card-content>
 </mat-card>
 

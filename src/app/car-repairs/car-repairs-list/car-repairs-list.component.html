@@ -1,13 +1,23 @@
 <div class="container">
-  <div class="board">
+
+  <div class="board" *ngIf="!($isFetching | async)">
+    
     <app-list-column name="New"
                      [canAdvance]="true"
-                     (advanceRepair)="advanceCarRepair($event)"></app-list-column>
+                     [repairs]="$carNewRepairsList"
+                     (advanceRepair)="advanceCarRepair($event)">
+    </app-list-column>
+
     <app-list-column name="In Progress"
                      [canAdvance]="true"
-                     (advanceRepair)="advanceCarRepair($event)"></app-list-column>
-    <app-list-column name="Done"></app-list-column>
-  </div>
+                     [repairs]="$carInProgressRepairsList"
+                     (advanceRepair)="advanceCarRepair($event)">
+    </app-list-column>
 
-  <mat-spinner></mat-spinner>
+    <app-list-column name="Done"
+                     [repairs]="$carDoneRepairsList">
+    </app-list-column>
+  </div>
+  
+  <mat-spinner *ngIf="($isFetching | async)"></mat-spinner>
 </div>

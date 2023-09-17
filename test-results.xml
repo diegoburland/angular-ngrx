@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 116.0.5845.179 (Mac OS 10.15.7)" package="" timestamp="2023-09-08T04:20:14" id="0" hostname="diego-burlando-W097XVQJCT" tests="12" errors="0" failures="0" time="0.209">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/116.0.5845.179 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent when starting from kanban board should show ongoing repairs" time="0.083" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should show new repairs" time="0.026" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should not reload data when going to dashboard" time="0.013" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should only show a spinner until data is loaded" time="0.011" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board should show done repairs" time="0.009" classname="AppComponent when starting from kanban board"/>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should add the repair to done column" time="0.009" classname="AppComponent when starting from kanban board when advancing in progress repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should remove the repair from in progress column" time="0.014" classname="AppComponent when starting from kanban board when advancing in progress repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should remove the repair from new column" time="0.012" classname="AppComponent when starting from kanban board when advancing new repairs"/>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should add the repair to in progress column" time="0.011" classname="AppComponent when starting from kanban board when advancing new repairs"/>
+  <testcase name="AppComponent when starting from dashboard should only show a spinner until data is loaded" time="0.006" classname="AppComponent when starting from dashboard"/>
+  <testcase name="AppComponent when starting from dashboard should not reload data when going to list" time="0.007" classname="AppComponent when starting from dashboard"/>
+  <testcase name="AppComponent when starting from dashboard should show correct stats" time="0.008" classname="AppComponent when starting from dashboard"/>
+  <system-out>
+    <![CDATA[Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 116.0.5845.179 (Mac OS 10.15.7) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

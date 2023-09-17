@@ -8,12 +8,12 @@ export const routes: Routes = [
   {
     path: 'car-repairs',
     component: CarRepairsDashboardComponent,
-    resolve: {carRepairs: CarRepairsResolve},
+    resolve: { carRepairs: CarRepairsResolve },
   },
   {
     path: 'car-repairs/list',
     component: CarRepairsListComponent,
-    resolve: {carRepairs: CarRepairsResolve},
+    resolve: { carRepairs: CarRepairsResolve },
   },
   {
     path: '**',
@@ -25,5 +25,4 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
